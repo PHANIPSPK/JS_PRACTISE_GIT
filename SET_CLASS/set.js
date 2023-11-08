@@ -25,4 +25,30 @@ console.log(set.keys());
 //entries(): set has no keys it has only values ,it returns [value , value ] instead of [key & value ] pair
 console.log(set.entries());
 
+console.log("-----------");
+
+let map=new Map([
+    ['id',101],
+    ["name","king"],
+    ["ids",101],
+    ["ides",101]
+])
+console.log(map);
+
+console.log(map.values());
+
+let vals=[]
+map.forEach((val,k,mp)=>{
+    console.log(val);
+    vals.push(val)
+    console.log(k);
+    console.log(mp);
+})
+
+console.log(vals);
+
+let s=new Set()
+s.add(vals)
+console.log(s);
+console.log(s.values());
 
